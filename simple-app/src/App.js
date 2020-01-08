@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h2>This image reside in another server</h2>
+        <h2>This image reside in another server</h2>
         <img src='https://cdn.pixabay.com/photo/2014/12/22/10/04/lion-577104__340.jpg' alt='lions'/>
         <h2>This image reside in public/images directory</h2>
         <img src={'/images/lion.jpg'} alt='lion'/>
