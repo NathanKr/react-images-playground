@@ -1,15 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { BsFillAlarmFill } from "react-icons/bs";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h2>This is bootstrap icon using react-icons for better performnce</h2>
+        <BsFillAlarmFill />
         <h2>This image reside in another server</h2>
-        <img src='https://cdn.pixabay.com/photo/2014/12/22/10/04/lion-577104__340.jpg' alt='lions'/>
+        <img
+          src="https://media.istockphoto.com/photos/african-lion-headshot-looking-to-camera-picture-id689458958"
+          alt="lions"
+          style={{ height: "200px" }}
+        />
         <h2>This image reside in public/images directory</h2>
-        <img src={'/images/lion.jpg'} alt='lion'/>
+        <img src="/images/lion.jpg" alt="lion" />
         <h2>This logo is imported from src directory</h2>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
